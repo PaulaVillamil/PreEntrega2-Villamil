@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(237, 220, 205);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(31, 64, 51);
+    font-size: 18px;
+    text-align: justify;
+}
+
+footer p{
+    padding-top: 20px; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(31, 64, 51);
+    font-size: 12px;
+    text-align: center;
+}
+
+header{
+    background-color:rgb(31, 64, 51);
+    width: 100%;
+}
+
+body{
+    background-color: rgb(236, 219, 204);
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: rgb(31, 64, 51);
+    font-size: 40px;
+}
+
+footer{
+    background-color: rgb(199, 129, 42);
+}

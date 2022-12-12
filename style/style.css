@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(237, 220, 205);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(31, 64, 51);
+  font-size: 18px;
+  text-align: justify;
+}
+
+footer p {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: rgb(31, 64, 51);
+  font-size: 12px;
+  text-align: center;
+}
+
+header {
+  background-color: rgb(31, 64, 51);
+  width: 100%;
+}
+
+body {
+  background-color: rgb(236, 219, 204);
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  color: rgb(31, 64, 51);
+  font-size: 40px;
+}
+
+footer {
+  background-color: rgb(199, 129, 42);
+}
+
+/*chequear si es mas eficiente usar variables*/
+.recreo__logo {
+  width: 30%;
+  padding-top: 40px;
+}
+@media (min-width: 576px) {
+  .recreo__logo {
+    width: 200px;
+  }
+}
+
+.foto__recreo, .flex__img {
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .foto__recreo, .flex__img {
+    height: 65%;
+  }
+}
+@media (min-width: 992px) {
+  .foto__recreo, .flex__img {
+    height: 500px;
+  }
+}
+
+.footer__gif {
+  width: 20%;
+}
+@media (min-width: 576px) {
+  .footer__gif {
+    width: 30%;
+  }
+}
+@media (min-width: 992px) {
+  .footer__gif {
+    width: 15%;
+  }
+}
+
+.header_desktop {
+  display: none;
+}
+@media (min-width: 576px) {
+  .header_desktop {
+    width: 100%;
+    display: inline;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .header_mobile {
+    display: none;
+  }
+}
+
+.flex__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+@media (min-width: 576px) {
+  .flex__container {
+    width: 100%;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+    gap: 10px;
+  }
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-right: 39%;
+}
+@media (min-width: 576px) {
+  nav {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: center;
+    gap: 10px;
+    padding: 0%;
+    padding-top: 20px;
+  }
+}
+
+.page__recreo {
+  height: 920px;
+  display: grid;
+  grid-template-areas: "logo" "p_recreo" "foto";
+  justify-items: center;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  .page__recreo {
+    height: 1500px;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .page__recreo {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "titulo_index titulo_index titulo_index" "logo p_recreo foto";
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 200px;
+    padding-top: 0%;
+  }
+}
+
+.page_about {
+  height: 920px;
+  display: grid;
+  grid-template-areas: "titulo" "p_about" "img_about";
+  justify-items: center;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  .page_about {
+    height: 1500px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .page_about {
+    height: 400x;
+    padding: 80px;
+    display: grid;
+    grid-template-areas: "titulo titulo" "p_about img_about";
+    grid-template-rows: 20% auto;
+    align-items: flex-start;
+  }
+}
+
+.p_recreo, .flex__p_about, .la_actividad, .p_workshop, .p_teambuilding, .p_kids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  gap: 20px;
+}
+@media (min-width: 576px) {
+  .p_recreo, .flex__p_about, .la_actividad, .p_workshop, .p_teambuilding, .p_kids {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .p_recreo, .flex__p_about, .la_actividad, .p_workshop, .p_teambuilding, .p_kids {
+    text-align: justify;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+.titulo_index {
+  display: none;
+}
+@media (min-width: 992px) {
+  .titulo_index {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-areas: "contacto" "gif" "favicon";
+  justify-items: center;
+}
+@media (min-width: 992px) {
+  footer {
+    height: 120px;
+    display: grid;
+    grid-template-areas: "contacto gif favicon";
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.footer__favicon {
+  height: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (min-width: 992px) {
+  .footer__favicon {
+    height: 20%;
+  }
+}
+
+nav {
+  grid-area: nav;
+}
+
+.titulo_index {
+  grid-area: titulo_index;
+}
+
+.flex__titulo {
+  grid-area: flex__titulo;
+}
+
+.page__recreo {
+  grid-area: page__recreo;
+}
+
+.page_about {
+  grid-area: page_about;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grilla {
+  min-height: 500px;
+  display: grid;
+  grid-template-areas: "nav" "page__recreo" "footer";
+  grid-template-columns: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+.body_about {
+  min-height: 500px;
+  display: grid;
+  grid-template-areas: "nav" "flex__titulo" "page_about" "footer";
+  grid-template-columns: 100%;
+  justify-content: center;
+  gap: 10px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.recreo__logo {
+  grid-area: logo;
+}
+
+.flex__titulo {
+  grid-area: titulo;
+}
+
+.p_recreo {
+  grid-area: p_recreo;
+}
+
+.flex__p_about {
+  grid-area: p_about;
+}
+
+.foto__recreo {
+  grid-area: foto;
+}
+
+.flex__img {
+  grid-area: img_about;
+}
+
+.flex__titulo {
+  display: flex;
+  padding: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.flex__contacto {
+  grid-area: contacto;
+}
+
+.footer__gif {
+  grid-area: gif;
+}
+
+.footer__favicon {
+  grid-area: favicon;
+}
+
+.recreo__index {
+  width: 100px;
+  display: flex;
+  align-content: center;
+}/*# sourceMappingURL=style.css.map */
