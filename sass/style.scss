@@ -1,50 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&display=swap');
+@import "colores";
 @import "generales";
 @import "media";
+@import "gridareas";
 
 
-nav{
-    grid-area: nav;
-}
-
-.titulo_index{
-    grid-area: titulo_index;
-}
-
-.flex__titulo{
-    grid-area: flex__titulo;
-}
-
-.page__recreo{
-    grid-area: page__recreo;
-}
-.page_about{
-    grid-area: page_about;
-}
-
-footer{
-    grid-area: footer;
-}
-
-.grilla{
+.grilla {
     min-height: 500px;
     display: grid;
-    grid-template-areas: "nav" "page__recreo" "footer";
-    grid-template-columns:100%;
+    grid-template-areas: "nav""page__recreo""footer";
+    grid-template-columns: 100%;
     justify-content: center;
     gap: 10px;
 }
 
-.body_about{
+.body {
     min-height: 500px;
     display: grid;
-    grid-template-areas: "nav" "flex__titulo" "page_about" "footer";
-    grid-template-columns:100%;
+    grid-template-areas: "nav""flex__titulo""page_about""footer";
+    grid-template-columns: 100%;
     justify-content: center;
     gap: 10px;
 }
 
-ul{
+.body_kids {
+    @extend.body;
+    grid-template-areas: "nav""flex__titulo""page_kids""footer";
+
+}
+
+ul {
     display: grid;
     grid-template-columns: 100%;
     justify-content: center;
@@ -52,55 +37,15 @@ ul{
     gap: 10px;
 }
 
-
-.recreo__logo{
-    grid-area: logo;
-}
-
-.flex__titulo{
-    grid-area: titulo;
-}
-
-.p_recreo{
-    grid-area: p_recreo;
-}
-
-.flex__p_about{
-    grid-area: p_about;
-}
-
-.foto__recreo{
-    grid-area: foto;
-}
-
-.flex__img{
-    grid-area: img_about;
-}
-
-.flex__titulo{
+.flex__titulo {
     display: flex;
     padding: 100px;
     padding-bottom: 50px;
     justify-content: center;
 }
 
-.flex__contacto{
-    grid-area: contacto;
-}
-
-.footer__gif{
-    grid-area: gif;
-}
-
-.footer__favicon{
-    grid-area: favicon;
-}
-
-.recreo__index{
-    width: 100px;
+.recreo__index {
+    @include logos (100px, 100px);
     display: flex;
     align-content: center;
 }
-
-
-

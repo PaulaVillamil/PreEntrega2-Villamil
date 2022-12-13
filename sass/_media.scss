@@ -1,40 +1,52 @@
-/*chequear si es mas eficiente usar variables*/
+@mixin logos ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
 .recreo__logo {
     width: 30%;
     padding-top: 40px;
-    @media (min-width:576px){
-        width: 200px;
+
+    @media (min-width:576px) {
+        @include logos (200px, 230px)
     }
 }
 
-.foto__recreo, .flex__img{
+.foto__recreo,
+.flex__img,
+.img_kids {
     height: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    @media (min-width:576px){
+
+    @media (min-width:576px) {
         height: 65%
     }
-    @media (min-width: 992px){
-            height: 500px
-            }
-    
+
+    @media (min-width: 992px) {
+        height: 500px
+    }
+
 
 }
 
-.footer__gif{
+.footer__gif {
     width: 20%;
-    @media (min-width:576px){
+
+    @media (min-width:576px) {
         width: 30%;
     }
-    @media (min-width: 992px){
+
+    @media (min-width: 992px) {
         width: 15%;
     }
 }
 
 .header_desktop {
     display: none;
-    @media (min-width:576px){
+
+    @media (min-width:576px) {
         width: 100%;
         display: inline;
         justify-content: center;
@@ -43,60 +55,73 @@
 }
 
 .header_mobile {
-    @media (min-width:576px){
+    @media (min-width:576px) {
         display: none;
     }
 }
 
-.flex__container{
+.flex__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     list-style: none;
-    @media (min-width:576px){
+
+    @media (min-width:576px) {
         width: 100%;
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         justify-items: center;
         align-items: center;
-        padding: 2%;  
+        padding: 2%;
         gap: 10px;
     }
 }
 
-nav{
+nav {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     padding-right: 39%;
-    @media (min-width:576px){
-    display: grid;
-    grid-template-columns: 100%;
-    align-items: center;
-    gap: 10px;
-    padding: 0%;
-    padding-top: 20px;
+
+    @media (min-width:576px) {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        gap: 10px;
+        padding: 0%;
+        padding-top: 20px;
     }
 }
 
-.page__recreo{
+.titulo_index {
+    display: none;
+
+    @media (min-width:992px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.page__recreo {
     height: 920px;
     display: grid;
-    grid-template-areas: "logo" "p_recreo" "foto";
+    grid-template-areas: "logo""p_recreo""foto";
     justify-items: center;
     gap: 20px;
-    @media (min-width:576px){
-    height: 1500px;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px;
+
+    @media (min-width:576px) {
+        height: 1500px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
     }
-    @media (min-width:992px){
+
+    @media (min-width:992px) {
         height: 100vh;
         display: grid;
-        grid-template-areas:"titulo_index titulo_index titulo_index" "logo p_recreo foto";
+        grid-template-areas: "titulo_index titulo_index titulo_index""logo p_recreo foto";
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: 50% 50%;
         align-items: center;
@@ -107,28 +132,48 @@ nav{
     }
 }
 
-.page_about{
-    height: 920px;
+.page_about {
+    height: 1300px;
     display: grid;
-    grid-template-areas: "titulo" "p_about" "img_about";
+    grid-template-areas: "titulo""p_about""img_about";
     justify-items: center;
     gap: 20px;
-    @media (min-width:576px){
+
+    @media (min-width:576px) {
         height: 1500px;
         grid-template-rows: 1fr 1fr;
-        gap: 10px;        
+        gap: 10px;
     }
-    @media (min-width:992px){
-        height: 400x;
-        padding: 80px;
+
+    @media (min-width:992px) {
+        height: 100vh;
         display: grid;
-        grid-template-areas:"titulo titulo" "p_about img_about";
-        grid-template-rows: 20% auto;
-        align-items: flex-start;
+        grid-template-areas: "titulo titulo""p_about img_about";
+        grid-template-columns: 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 200px;
+        padding-top: 0%;
     }
 }
 
-.p_recreo, .flex__p_about, .la_actividad, .p_workshop, .p_teambuilding, .p_kids {
+.page_kids {
+    @extend.page_about;
+    grid-template-areas: "titulo""p_kids""img_kids";
+
+    @media (min-width:992px) {
+        grid-template-areas: "titulo titulo""p_kids img_kids";
+    }
+}
+
+.p_recreo,
+.flex__p_about,
+.la_actividad,
+.p_workshop,
+.p_teambuilding,
+.p_kids {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,32 +181,27 @@ nav{
     width: 70%;
     gap: 20px;
 
-    @media (min-width:576px){
+    @media (min-width:576px) {
         padding-top: 40px;
         padding-bottom: 40px;
     }
-    @media (min-width:992px){
+
+    @media (min-width:992px) {
         text-align: justify;
         padding-top: 10px;
-        padding-bottom: 20px;        
+        padding-bottom: 20px;
     }
 
 }
 
-.titulo_index{
-    display: none;
-    @media (min-width:992px){
-        display: flex;
-        justify-content: center;
-    }
-}
 
-footer{
+
+footer {
     display: grid;
-    grid-template-areas: "contacto" "gif" "favicon";
+    grid-template-areas: "contacto""gif""favicon";
     justify-items: center;
-    
-    @media (min-width:992px){
+
+    @media (min-width:992px) {
         height: 120px;
         display: grid;
         grid-template-areas: "contacto gif favicon";
@@ -171,11 +211,12 @@ footer{
 
 }
 
-.footer__favicon{
+.footer__favicon {
     height: 40%;
     display: flex;
     justify-content: space-evenly;
-    @media (min-width:992px){
+
+    @media (min-width:992px) {
         height: 20%;
     }
 }
