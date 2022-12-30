@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="../style/style.css">
 
     <title>Escribinos!</title>
+    <link rel="icon" type="image/jpg" href="../multimedia/favicon.ico"/>
+
 </head>
 
-<body class="grilla">
+<body class="body_contacto">
 
     <header>
         <div class="header_mobile">
@@ -94,32 +96,31 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="page_contacto">
         <h1 class="flex__titulo">Contacto</h1>
-        <form>
-            <fieldset disabled>
-                <legend>Escribinos!</legend>
+        <form class="form_contacto">
                 <div class="mb-3">
-                    <label for="disabledTextInput" class="form-label">Nombre</label>
-                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                    <label for="disabledTextInput" class="form-label">Correo electrónico</label>
+                    <input type="text" id="disabledTextInput" class="form-control" >
                 </div>
                 <div class="mb-3">
-                    <label for="disabledSelect" class="form-label">tema de consulta</label>
+                    <label for="disabledSelect" class="form-label">Quiero saber más sobre:</label>
                     <select id="disabledSelect" class="form-select">
                         <option>Talleres</option>
-                        <option>Casal</option>
+                        <option>Kids</option>
+                        <option>Team Building</option>
+                        <option>Otros</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
+                        <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
                         <label class="form-check-label" for="disabledFieldsetCheck">
-                            Can't check this
+                            Quiero recibir noticias y promociones de Recreo
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </fieldset>
+                <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </main>
     <footer class="flex__footer">

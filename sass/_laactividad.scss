@@ -1,0 +1,63 @@
+/*.body_actividad {
+    @extend.page_about;
+    grid-template-areas: "nav" "titulo" "page_laactividad" "footer";
+}*/
+.page_laactividad {
+    height: 1700px;
+    grid-template-columns: 1fr;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "titulo" "la_actividad";
+    justify-items: center;
+    @media (min-width:576px) {
+        height: 1900px;
+    }
+    @media (min-width:992px) {
+        height: 1200px;
+        grid-template-areas: "titulo titulo" "la_actividad la_actividad";
+        } 
+
+} 
+
+.div_laactividad {
+    height: 1300px;
+    display: grid;
+    grid-template-areas: "paso_uno" "paso1" "paso_dos" "paso2" "paso_tres" "paso3" "paso_cuatro" "paso4";
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+
+    @media (min-width:576px) {
+        height: 1700px;
+    }
+    @media (min-width:992px) {
+    text-align: start;
+    height: 100vh;
+    grid-template-areas: "paso_uno paso1" "paso_dos paso2" "paso_tres paso3" "paso_cuatro paso4";
+    grid-template-columns: 33.3% 33.3%;
+    }
+}
+
+.la_actividad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+
+    @media (min-width:576px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: start;
+    }
+
+    @media (min-width:992px) {
+        text-align: start;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-areas: "paso_uno paso1" "paso_dos paso2" "paso_tres paso3" "paso_cuatro paso4";
+    }
+
+}
+

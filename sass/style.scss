@@ -3,31 +3,15 @@
 @import "generales";
 @import "media";
 @import "gridareas";
+@import "recreo";
+@import "about";
+@import "kids";
+@import "laactividad";
+@import "teambuilding";
+@import "workshops";
+@import "contacto";
 
 
-.grilla {
-    min-height: 500px;
-    display: grid;
-    grid-template-areas: "nav""page__recreo""footer";
-    grid-template-columns: 100%;
-    justify-content: center;
-    gap: 10px;
-}
-
-.body {
-    min-height: 500px;
-    display: grid;
-    grid-template-areas: "nav""flex__titulo""page_about""footer";
-    grid-template-columns: 100%;
-    justify-content: center;
-    gap: 10px;
-}
-
-.body_kids {
-    @extend.body;
-    grid-template-areas: "nav""flex__titulo""page_kids""footer";
-
-}
 
 ul {
     display: grid;
@@ -38,8 +22,9 @@ ul {
 }
 
 .flex__titulo {
+    height: 180px;
     display: flex;
-    padding: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
     justify-content: center;
 }

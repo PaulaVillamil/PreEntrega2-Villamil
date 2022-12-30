@@ -1,0 +1,36 @@
+.grilla {
+    min-height: 500px;
+    display: grid;
+    grid-template-areas: "nav""page__recreo""footer";
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page__recreo {
+    height: 920px;
+    display: grid;
+    grid-template-areas: "logo""p_recreo""foto";
+    justify-items: center;
+    gap: 20px;
+
+    @media (min-width:576px) {
+        height: 1500px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    @media (min-width:992px) {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "titulo_index titulo_index titulo_index""logo p_recreo foto";
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 200px;
+        padding-top: 0%;
+    }
+}
+

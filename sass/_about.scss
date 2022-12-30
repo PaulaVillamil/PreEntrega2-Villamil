@@ -1,0 +1,35 @@
+.body {
+    min-height: 500px;
+    display: grid;
+    grid-template-areas: "nav""titulo""page_about""footer";
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page_about {
+    height: 1300px;
+    display: grid;
+    grid-template-areas: "titulo""p_about""img_about";
+    justify-items: center;
+    gap: 20px;
+
+    @media (min-width:576px) {
+        height: 1500px;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+    }
+
+    @media (min-width:992px) {
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "titulo titulo""p_about img_about";
+        grid-template-columns: 33.3% 33.3%;
+        grid-template-rows: 50% 50%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding-bottom: 200px;
+        padding-top: 0%;
+    }
+}

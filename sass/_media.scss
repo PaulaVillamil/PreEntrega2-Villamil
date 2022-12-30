@@ -14,7 +14,10 @@
 
 .foto__recreo,
 .flex__img,
-.img_kids {
+.img_kids,
+.img_w,
+.img_portada,
+.img_tb {
     height: 35%;
     display: flex;
     flex-direction: column;
@@ -29,6 +32,24 @@
     }
 
 
+}
+
+.paso_1, 
+.paso_2, 
+.paso_3, 
+.paso_4 {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width:576px) {
+        height: 300px
+    }
+
+    @media (min-width: 992px) {
+        height: 200px
+    }
 }
 
 .footer__gif {
@@ -105,68 +126,6 @@ nav {
     }
 }
 
-.page__recreo {
-    height: 920px;
-    display: grid;
-    grid-template-areas: "logo""p_recreo""foto";
-    justify-items: center;
-    gap: 20px;
-
-    @media (min-width:576px) {
-        height: 1500px;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 10px;
-    }
-
-    @media (min-width:992px) {
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "titulo_index titulo_index titulo_index""logo p_recreo foto";
-        grid-template-columns: 33.3% 33.3% 33.3%;
-        grid-template-rows: 50% 50%;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding-bottom: 200px;
-        padding-top: 0%;
-    }
-}
-
-.page_about {
-    height: 1300px;
-    display: grid;
-    grid-template-areas: "titulo""p_about""img_about";
-    justify-items: center;
-    gap: 20px;
-
-    @media (min-width:576px) {
-        height: 1500px;
-        grid-template-rows: 1fr 1fr;
-        gap: 10px;
-    }
-
-    @media (min-width:992px) {
-        height: 100vh;
-        display: grid;
-        grid-template-areas: "titulo titulo""p_about img_about";
-        grid-template-columns: 33.3% 33.3%;
-        grid-template-rows: 50% 50%;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        padding-bottom: 200px;
-        padding-top: 0%;
-    }
-}
-
-.page_kids {
-    @extend.page_about;
-    grid-template-areas: "titulo""p_kids""img_kids";
-
-    @media (min-width:992px) {
-        grid-template-areas: "titulo titulo""p_kids img_kids";
-    }
-}
 
 .p_recreo,
 .flex__p_about,
@@ -193,6 +152,7 @@ nav {
     }
 
 }
+
 
 
 

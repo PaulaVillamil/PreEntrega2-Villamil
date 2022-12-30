@@ -1,0 +1,14 @@
+/*.body_kids {
+    @extend.body;
+    grid-template-areas: "nav""titulo""page_kids""footer";
+
+}*/
+
+.page_kids {
+    @extend.page_about;
+    grid-template-areas: "titulo""p_kids""img_kids";
+
+    @media (min-width:992px) {
+        grid-template-areas: "titulo titulo""p_kids img_kids";
+    }
+}

@@ -1,0 +1,17 @@
+.body_w {
+    min-height: 500px;
+    display: grid;
+    grid-template-areas: "nav""titulo""page_w""footer";
+    grid-template-columns: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page_w {
+    @extend.page_about;
+    grid-template-areas: "titulo""p_work""img_w";
+
+    @media (min-width:992px) {
+        grid-template-areas: "titulo titulo""p_work img_w";
+    }
+}

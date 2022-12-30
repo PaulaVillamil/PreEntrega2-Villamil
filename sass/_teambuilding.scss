@@ -1,0 +1,14 @@
+/*.body_teamb {
+    @extend.body;
+    grid-template-areas: "nav""titulo""page_teamb""footer";
+
+}*/
+
+.page_tb {
+    @extend.page_about;
+    grid-template-areas: "titulo""p_teamb""img_tb";
+
+    @media (min-width:992px) {
+        grid-template-areas: "titulo titulo""p_teamb img_tb";
+    }
+}

@@ -6,10 +6,6 @@ nav {
     grid-area: titulo_index;
 }
 
-.flex__titulo {
-    grid-area: flex__titulo;
-}
-
 .page__recreo {
     grid-area: page__recreo;
 }
@@ -56,6 +52,70 @@ footer {
 
 .img_kids {
     grid-area: img_kids;
+}
+
+.la_actividad {
+    grid-area: la_actividad;
+}
+
+.pasos {
+    grid-area: pasos;
+}
+
+.paso_1{
+    grid-area: paso1;
+}
+
+.paso_2{
+    grid-area: paso2;
+}
+
+.paso_3{
+    grid-area: paso3;
+}
+
+.paso_4{
+    grid-area: paso4;
+}
+
+.page_w{
+    grid-area: page_w;
+}
+
+.p_workshop{
+    grid-area: p_work;
+}
+
+.p_pasouno{
+    grid-area: paso_uno;
+}
+
+.p_pasodos{
+    grid-area: paso_dos;
+}
+
+.p_pasotres{
+    grid-area: paso_tres;
+}
+
+.p_pasocuatro{
+    grid-area: paso_cuatro;
+}
+
+.page_tb{
+    grid-area: page_teamb;
+}
+
+.p_teambuilding{
+    grid-area: p_teamb;
+}
+
+.img_tb {
+    grid-area: img_tb;
+}
+
+.img_w {
+    grid-area: img_w;
 }
 
 .flex__contacto {
