@@ -1,3 +1,15 @@
+.page_about {
+    grid-area: page_about;
+}
+
+.flex__p_about {
+    grid-area: p_about;
+}
+
+.flex__img {
+    grid-area: img_about;
+}
+
 .body {
     min-height: 500px;
     display: grid;

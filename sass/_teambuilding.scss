@@ -1,8 +1,14 @@
-/*.body_teamb {
-    @extend.body;
-    grid-template-areas: "nav""titulo""page_teamb""footer";
+.page_tb{
+    grid-area: page_teamb;
+}
 
-}*/
+.p_teambuilding{
+    grid-area: p_teamb;
+}
+
+.img_tb {
+    grid-area: img_tb;
+}
 
 .page_tb {
     @extend.page_about;

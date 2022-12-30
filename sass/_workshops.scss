@@ -1,3 +1,15 @@
+.page_w{
+    grid-area: page_w;
+}
+
+.p_workshop{
+    grid-area: p_work;
+}
+
+.img_w {
+    grid-area: img_w;
+}
+
 .body_w {
     min-height: 500px;
     display: grid;

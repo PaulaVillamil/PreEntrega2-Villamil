@@ -2,7 +2,6 @@
 @import "colores";
 @import "generales";
 @import "media";
-@import "gridareas";
 @import "recreo";
 @import "about";
 @import "kids";
@@ -13,24 +12,3 @@
 
 
 
-ul {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.flex__titulo {
-    height: 180px;
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    justify-content: center;
-}
-
-.recreo__index {
-    @include logos (100px, 100px);
-    display: flex;
-    align-content: center;
-}

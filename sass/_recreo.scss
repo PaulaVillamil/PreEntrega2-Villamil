@@ -1,3 +1,15 @@
+.page__recreo {
+    grid-area: page__recreo;
+}
+
+.p_recreo {
+    grid-area: p_recreo;
+}
+
+.foto__recreo {
+    grid-area: foto;
+}
+
 .grilla {
     min-height: 500px;
     display: grid;

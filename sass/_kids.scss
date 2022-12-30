@@ -1,8 +1,14 @@
-/*.body_kids {
-    @extend.body;
-    grid-template-areas: "nav""titulo""page_kids""footer";
+.page_kids {
+    grid-area: page_kids;
+}
 
-}*/
+.p_kids {
+    grid-area: p_kids;
+}
+
+.img_kids {
+    grid-area: img_kids;
+}
 
 .page_kids {
     @extend.page_about;
